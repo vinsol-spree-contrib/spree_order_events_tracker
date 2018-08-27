@@ -1,6 +1,10 @@
 SpreeOrderEventsTracker
 =======================
 
+Try Spree Order Event tracker for Spree master with direct deployment on Heroku:
+
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/himanshumishra31/testorderevents)
+
 Introduction goes here.
 
 ## Installation
@@ -8,6 +12,7 @@ Introduction goes here.
 1. Add this extension to your Gemfile with this line:
   ```ruby
   gem 'spree_order_events_tracker', github: '[your-github-handle]/spree_order_events_tracker'
+  gem 'vertical-timeline-rails'
   ```
 
 Add following lines to your assets.rb file and restart the server.

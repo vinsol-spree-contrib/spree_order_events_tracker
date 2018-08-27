@@ -1,0 +1,18 @@
+<%= javascript_include_tag 'spree/backend/vertical-timeline' %>
+<%= stylesheet_link_tag 'spree/backend/vertical-timeline', media: :all %>
+<%= render 'spree/admin/shared/order_tabs', current: :timeline %>
+
+<% @collection.each do |record| %>
+  <%= timeline_container("#{record.action.humanize}: #{ flash_message(record.flash, record.action) } ", record.created_at.to_datetime, timeline_image(record.action)) do %>
+    <% if record.user.present? %>
+      <p> Action performed By:
+        <%= link_to record.user.email, edit_admin_user_path(record.user), target: '_blank' %>
+      </p>
+    <% end %>
+    <p>Response Code: <%= record.response_code %></p>
+    <p>Ip Address: <%= record.ip_address %> </p>
+    <p>Controller: <%= record.controller %> </p>
+
+
+  <% end %>
+<% end %>
