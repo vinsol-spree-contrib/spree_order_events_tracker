@@ -10,6 +10,7 @@ module Vertical
       #     <%= link_to 'See item', '#', class: 'cd-read-more' %>
       #   <% end %>
       def timeline_container(title, date, image, &block)
+        debugger
         if image =~ /location/
           image_type = "location"
         elsif image =~ /movie/
