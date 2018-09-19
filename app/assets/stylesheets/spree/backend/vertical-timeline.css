@@ -305,6 +305,7 @@ header h1 {
   border: 7px solid transparent;
   border-right: 7px solid white;
 }
+
 @media only screen and (min-width: 768px) {
   .cd-timeline-content h2 {
     font-size: 20px;
@@ -380,11 +381,12 @@ header h1 {
   }
 }
 
-@media only screen and (min-width: 768px)
+@media only screen and (min-width: 768px) {
   .cd-timeline-content p {
     font-size: 16px !important;
   }
 }
+
 @-webkit-keyframes cd-bounce-2 {
   0% {
     opacity: 0;
