@@ -9,8 +9,7 @@
         <%= link_to record.user.email, edit_admin_user_path(record.user), target: '_blank' %>
       </p>
     <% end %>
-    <p>Response Code: <%= record.response_code %></p>
     <p>Ip Address: <%= record.ip_address %> </p>
-    <p>Controller: <%= record.controller %> </p>
+    <p>Module: <%= record.controller %> </p>
   <% end %>
 <% end %>
