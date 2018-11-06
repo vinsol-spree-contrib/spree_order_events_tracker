@@ -5,7 +5,7 @@ Try Spree Order Event tracker for Spree master with direct deployment on Heroku:
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/himanshumishra31/testorderevents)
 
-Introduction goes here.
+This extension tracks the activities around orders, including information on who made the change, when the change was made and in which module the change was made.
 
 ## Installation
 
