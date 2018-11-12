@@ -45,6 +45,11 @@ Simply add this require statement to your spec_helper:
 require 'spree_order_events_tracker/factories'
 ```
 
+## See It In Action
+
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=oh8ryipLHuw
+" target="_blank"><img src="http://img.youtube.com/vi/oh8ryipLHuw/0.jpg" 
+alt="Youtube Video Tutorial" /></a>
 
 ## Contributing
 
