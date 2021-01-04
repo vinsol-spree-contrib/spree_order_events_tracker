@@ -1,3 +1,7 @@
-Spree::Order.class_eval do
-  has_many :order_events_trackers
+module Spree::OrderDecorator
+  def self.prepended(base)
+    base.has_many :order_events_trackers
+  end
 end
+
+::Spree::Order.prepend(Spree::OrderDecorator)
